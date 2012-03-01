@@ -1,0 +1,33 @@
+<form action='index.php' method='post'>
+<input type='hidden' name='module' value='acl_fields' />
+<input type='hidden' name='action' value='EditAclFields' />
+{if empty($role)}
+	Role: {html_options name=role options=$roles_list}
+	Module: {html_options name=category options=$moduleList}
+	<input type='submit' value='Next >>'>
+	</form>
+{else}
+	<input type='hidden' name='role' value='{$role}' />
+	<input type='hidden' name='category' value='{$category}' />
+	<input type='hidden' name='update' value='yes' />
+	<h2>Role: {$roleName} - Module: {$moduleName} {$updated}</h2>
+	<br />
+	<table class='list view' style='width: 50%;'>
+		<th>Field Name</th>
+		<th>Internal Name</th>
+		<th>Access</th>
+	{foreach from=$acl_fields item=acl_field key=i}
+		<tr>
+			<td>{$acl_field.label}</td>
+			<td>{$acl_field.field}</td>
+			<td>
+				{html_options name=$acl_field.inputname options=$fields_access_list selected=$acl_field.value}
+				<input name='{$acl_field.prevname}' type='hidden' value='{$acl_field.value}' />
+				<input name='{$acl_field.idname}' type='hidden' value='{$acl_field.id}' />
+			</td>
+		</tr>
+	{/foreach}
+	</table>
+	<input type='submit' value='Save'>
+{/if}
+</form>

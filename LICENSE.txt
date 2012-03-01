@@ -1,0 +1,16 @@
+
+SIMPLE BETA TESTERS LICENSE
+
+SugarCRM CE Field level Access control
+(c) 2009 - Marnus van Niekerk - sugarcrm@mjvn.net
+
+
+This module is a beta release for testing and evaluation only.
+It comes with absolutely no warranty of any kind.
+
+You are permitted to install and use this module for testing and evaluation purposes
+provided that you agree to give feedback on its use and usefulness by e-mail to
+sugarcrm@mjvn.net.
+
+Provided that you give the feedback referred to above you will be given a perpetual
+royalty free license for the final module when released
