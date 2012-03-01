@@ -1,0 +1,4 @@
+I am trying to understand how it is done to be able to apply changer to newer templates.
+It looks quite easy.
+
+You will find diffs here. I compared SugarCRM 5.5.4 original files and FLAC files (which are newer then FLAC files, but it should be ok).
