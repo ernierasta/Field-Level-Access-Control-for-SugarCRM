@@ -18,5 +18,5 @@ sed -i "s/version' => .*$/version' => '$version',/" manifest.php
 
 fgrep \'version manifest.php | cut -f2 -d\>
 
-rm -f /tmp/$file
-zip -r /tmp/$file * >/dev/null 2>&1
+rm -f ../$file
+zip -r ../$file * >/dev/null 2>&1

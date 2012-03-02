@@ -2,3 +2,18 @@ I am trying to understand how it is done to be able to apply changer to newer te
 It looks quite easy.
 
 You will find diffs here. I compared SugarCRM 5.5.4 original files and FLAC files (which are newer then FLAC files, but it should be ok).
+
+How i add support for ListView variable hidding:
+
+1. Realized, that in ListView i can not use $bean.
+2. Added $pageData['acl_fields'] = $_SESSION['current_user_acl_fields']; into ListViewData.php. $pageData is availabile for ListView template, so we can now use these data there. It would be bether if could put it somewere else, but i don't know where. To make it work.
+3. This is line to ListViewGeneric.tpl {$pageData.fields_acl[$pageData.bean.moduleDir][$params.name]} will show access level for entry. Let's make it do main stuff.
+4. Modify ListViewGeneric.tpl. lines 149-156.
+					{if $pageData.acl_fields[$pageData.bean.moduleDir][$params.name] < 1}
+						{if $params.customCode} 
+							{sugar_evalcolumn_old var=$params.customCode rowData=$rowData}
+						{else}
+						
+								{sugar_field parentFieldArray=$rowData vardef=$params displayType=ListView field=$col}
+						{/if}
+					{/if}

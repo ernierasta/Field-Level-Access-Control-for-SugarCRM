@@ -1,14 +1,5 @@
 --- DetailView.tpl	2010-06-23 16:00:26.000000000 +0200
 +++ DetailView.tpl.flac	2010-04-03 03:55:38.000000000 +0200
-@@ -1,7 +1,7 @@
- {*
- /*********************************************************************************
-  * SugarCRM is a customer relationship management program developed by
-- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
-+ * SugarCRM, Inc. Copyright (C) 2004 - 2009 SugarCRM Inc.
-  * 
-  * This program is free software; you can redistribute it and/or modify it under
-  * the terms of the GNU General Public License version 3 as published by the
 @@ -70,6 +70,11 @@
  		{{assign var='columnsInRow' value=$rowData|@count}}
  		{{assign var='columnsUsed' value=0}}
@@ -36,10 +27,3 @@
  		{{/foreach}}
  	</tr>
  	{{/foreach}}
-@@ -122,4 +135,4 @@
- <script>document.getElementById("{{$label}}").style.display='none';</script>
- {/if}
- {{/foreach}}
--{{include file=$footerTpl}}
-\ Brak znaku nowej linii na końcu pliku
-+{{include file=$footerTpl}}

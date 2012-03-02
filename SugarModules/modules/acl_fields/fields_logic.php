@@ -44,8 +44,8 @@ class acl_fields_logic
 			{
 				$vname = $bean->field_name_map[$fieldname]['vname'];
 				if (  (eregi('detail',$view) && $limit > 1) ||
-				     /* (eregi('list',$view)   && $limit > 0) ||
-				      (eregi('index',$view)  && $limit > 0) || */
+				      (eregi('list',$view)   && $limit > 0) ||
+				      (eregi('index',$view)  && $limit > 0) ||
 				      (eregi('edit',$view) && $limit > 0)   )
 				{
 					//unset($bean->field_name_map[$fieldname]);
@@ -54,6 +54,8 @@ class acl_fields_logic
 					//$mod_strings[$vname] = '';
 				}
 			}
+		//ER DEBUG
+		//print_r($current_user->acl_fields);
 	}
 }
 ?>

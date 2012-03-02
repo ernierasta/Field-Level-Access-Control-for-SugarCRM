@@ -11,5 +11,8 @@ function pre_install()
 	// Backup the original sugar templates
 	copy("include/EditView/EditView.tpl","include/EditView/EditViewOriginal.tpl");
 	copy("include/DetailView/DetailView.tpl","include/DetailView/DetailViewOriginal.tpl");
+	//ER2012
+	copy("include/ListView/ListViewGeneric.tpl","include/ListView/ListViewGenericOriginal.tpl");
+	copy("include/ListView/ListViewData.php","include/ListView/ListViewData.php");
 }
 ?>

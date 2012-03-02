@@ -1,14 +1,5 @@
 --- EditView.tpl	2010-06-23 16:00:26.000000000 +0200
 +++ EditView.tpl.flac	2010-04-03 03:52:56.000000000 +0200
-@@ -1,7 +1,7 @@
- {*
- /*********************************************************************************
-  * SugarCRM is a customer relationship management program developed by
-- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
-+ * SugarCRM, Inc. Copyright (C) 2004 - 2009 SugarCRM Inc.
-  * 
-  * This program is free software; you can redistribute it and/or modify it under
-  * the terms of the GNU General Public License version 3 as published by the
 @@ -89,6 +89,11 @@
  	{{/if}}
  
@@ -37,40 +28,14 @@
  				{{sugar_field parentFieldArray='fields' tabindex=$colData.field.tabindex vardef=$fields[$colData.field.name] displayType='editView' displayParams=$colData.field.displayParams typeOverride=$colData.field.type formName=$form_name}}
  			{{/if}}
  
-+
-+
-+
-+
-+
-+
+
 +		{{if $colData.field.name != ''}}
 +		{else}
 +			<td>&nbsp;</td><td>&nbsp;</td>
 +		{/if}
 +		{{/if}}
 +
-+
-+
-+
-+
-+
-+
-+
-+
-+
-+
-+
-+
-+
-+
-+
-+
-+
-+
-+
-+
-+
-+
+
  	{{/foreach}}
  </tr>
  {{/foreach}}

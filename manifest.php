@@ -15,9 +15,9 @@
 		  'icon' => '',
 		  'is_uninstallable' => true,
 		  'name' => 'FieldLevelAccess',
-		  'published_date' => '2010-04-05 09:05:00',
+		  'published_date' => '2012-03-02 20:49:00',
 		  'type' => 'module',
-		  'version' => '0.71',
+		  'version' => '0.73',
 		  'remove_tables' => 'prompt',
 		  );
 $installdefs = array (
@@ -60,28 +60,78 @@ $installdefs = array (
     ),
     2 => 
     array (
-      'from' => '<basepath>/SugarModules/include/EditView/EditView.tpl',
+      'from' => '<basepath>/SugarModules/custom/include/EditView/EditView.tpl',
       'to' => 'include/EditView/EditView.tpl',
     ),
     3 => 
     array (
-      'from' => '<basepath>/SugarModules/include/EditView/EditView.tpl',
+      'from' => '<basepath>/SugarModules/custom/include/EditView/EditView.tpl',
       'to' => 'custom/include/EditView/EditView.tpl',
     ),
     4 => 
     array (
-      'from' => 'include/DetailView/DetailView.tpl',
-      'to' => 'include/DetailView/DetailView.tpl.orig',
+      'from' => '<basepath>/SugarModules/custom/include/EditView/EditView2.php',
+      'to' => 'custom/include/EditView/EditView2.php',
     ),
     5 => 
     array (
-      'from' => '<basepath>/SugarModules/include/DetailView/DetailView.tpl',
-      'to' => 'include/DetailView/DetailView.tpl',
+      'from' => 'include/DetailView/DetailView.tpl',
+      'to' => 'include/DetailView/DetailView.tpl.orig',
     ),
     6 => 
     array (
-      'from' => '<basepath>/SugarModules/include/DetailView/DetailView.tpl',
+      'from' => '<basepath>/SugarModules/custom/include/DetailView/DetailView.tpl',
+      'to' => 'include/DetailView/DetailView.tpl',
+    ),
+    7 => 
+    array (
+      'from' => '<basepath>/SugarModules/custom/include/DetailView/DetailView.tpl',
       'to' => 'custom/include/DetailView/DetailView.tpl',
+    ),
+    8 => 
+    array (
+      'from' => '<basepath>/SugarModules/custom/modules/AOS_Products/views/view.detail.php',
+      'to' => 'custom/modules/AOS_Products/views/view.detail.php',
+    ),
+    9 => 
+    array (
+      'from' => '<basepath>/SugarModules/custom/modules/AOS_Products/views/DetailView.tpl',
+      'to' => 'custom/modules/AOS_Products/views/DetailView.tpl',
+    ),
+    10 => 
+    array (
+      'from' => 'include/ListView/ListViewGeneric.tpl',
+      'to' => 'include/ListView/ListViewGeneric.tpl.orig',
+    ),
+    11 => 
+    array (
+      'from' => '<basepath>/SugarModules/custom/include/ListView/ListViewGeneric.tpl',
+      'to' => 'include/ListView/ListViewGeneric.tpl',
+    ),
+    12 => 
+    array (
+      'from' => '<basepath>/SugarModules/custom/include/ListView/ListViewGeneric.tpl',
+      'to' => 'custom/include/ListView/ListViewGeneric.tpl',
+    ),
+    13 => 
+    array (
+      'from' => '<basepath>/SugarModules/custom/include/ListView/ListViewFacade.php',
+      'to' => 'custom/include/ListView/ListViewFacade.php',
+    ),
+    14 => 
+    array (
+      'from' => 'include/ListView/ListViewData.php',
+      'to' => 'include/ListView/ListViewData.php.orig',
+    ),
+    15 => 
+    array (
+      'from' => '<basepath>/SugarModules/custom/include/ListView/ListViewData.php',
+      'to' => 'include/ListView/ListViewData.php',
+    ),
+    16 => 
+    array (
+      'from' => '<basepath>/SugarModules/custom/include/ListView/ListViewData.php',
+      'to' => 'custom/include/ListView/ListViewData.php',
     ),
   ),
   'language' => 
